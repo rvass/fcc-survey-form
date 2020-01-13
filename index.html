@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Roster Preference Form</title>
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Roster Preference Form</h1>
+            <p id="description">Complete this form if you know what's good for you</p>
+        </header>
+        <form id="survey-form" action="mailto:rvass@npcmedia.com.au">
+            <div class="form-div">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" placeholder="Enter your name" id="name"  required>    
+            </div>
+            <div class="form-div">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" placeholder="Enter your email" id="email"  required>
+            </div>
+            
+            <div class="form-div">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" min="10" max="100" placeholder="Age" id="number">    
+            </div>
+            
+            <div class="form-div">
+                <label for="dropdown">Which department roster do you belong to?</label>
+                <select id="dropdown">
+                    <option value="">--Please choose an option--</option>
+                    <option value="MCR">MCR Team Lead</option>
+                    <option value="MCR">MCR</option>
+                    <option value="Pres">Presentation Supervisor</option>
+                    <option value="MCR">Presentation</option>
+                    <option value="Ingest">Ingest</option>
+                    <option value="Engineering">Engineering</option>
+                </select>    
+            </div>
+            
+            <div class="form-div">
+                <p>How satisified are you with the exisiting roster?</p>
+                
+                <label for="very-satisfied"><input type="radio" value="very-satisfied" id="very-satisfied" name="how-satisfied" checked/>Very satisfied</label>
+                <label for="satisfied"><input type="radio" value="satisfied" id="satisfied" name="how-satisfied" checked/>Satisfied</label>
+                <label for="not-satisfied"><input type="radio" value="not-satisfied" id="not-satisfied" name="how-satisfied" checked/>Not satisfied</label>
+            </div>
+            
+            
+            <div class="form-div">
+                <p>What would you like to see improved?</p>
+                <label for="people"><input type="checkbox" id="people" value="people" name="improvements" checked/>People</label>
+                <label for="procedures"><input type="checkbox" id="procedures" value="procedures"  name="improvements" checked/>Shift start/finish times</label>
+                <label for="parking"><input type="checkbox" id="parking" value="parking" name="improvements" checked/>Parking</label>
+                <label for="rosters"><input type="checkbox" id="rosters" value="rosters" name="improvements" checked/>Rosters</label>
+                <label for="payment"><input type="checkbox" id="payment" value="payment" name="improvements" checked/>Payment</label>
+                <label for="facilities"><input type="checkbox" id="facilities" value="facilities" name="improvements" checked/>Facilities</label>                
+            </div>
+
+            <div>
+                <p>Which of the following considerations are most important to you? Please rank in order from 1 to 10 (1 being the highest and 10 being the lowest)</p>
+                
+                <div class="considerations">
+                    <label for="max-weekends">Maximum number of weekend RDO's</label>
+                    <input type="number" name="priority" id="max-weekends">
+                </div>  
+                <div class="considerations">
+                    <label for="max-weekends">Maximum 7 working days in a row</label>
+                    <input type="number" name="priority" id="max-weekends">
+                </div>  
+                <div class="considerations">
+                    <label for="max-weekends">7 night shifts in a row</label>
+                    <input type="number" name="priority" id="max-weekends">
+                </div> 
+                <div class="considerations">
+                    <label for="max-weekends">fast rotating</label>
+                    <input type="number" name="priority" id="max-weekends">
+                </div>               
+                <div class="considerations">
+                    <label for="max-weekends">slow rotating</label>
+                    <input type="number" name="priority" id="max-weekends">
+                </div>
+                <div class="considerations">
+                    <label for="max-weekends">longer shifts ie 12 hours</label>
+                    <input type="number" name="priority" id="max-weekends">
+                </div>                  
+                <div class="considerations">
+                    <label for="max-weekends">inclusion of short turn-around shift</label>
+                    <input type="number" name="priority" id="max-weekends">
+                </div>                    
+                
+               
+                
+            </div>
+
+            <div class="form-div">
+                <label for="else">Anything else?</label>
+                <textarea id="else" name="else" rows="5" cols="33">Please go into detail...</textarea>
+            </div>
+            
+            <div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+            
+            
+            
+        </form>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
